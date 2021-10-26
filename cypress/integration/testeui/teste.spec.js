@@ -47,7 +47,7 @@ describe ("Dev Dota2", () => {
 
 
     it
-    ("visitar Comunnity Dota 2", () => {
+    ("visitar Ability Draft Bugs", () => {
         
         cy.get('#forum83 > .cell-forum > .forum-wrapper > .forum-info > .forum-title').click()
         cy.get('#widget_12 > .widget-header > .module-title > .main-title').should("contain.text", "Ability Draft Bugs")
