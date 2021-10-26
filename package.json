@@ -1,0 +1,23 @@
+{
+  "name": "testeui",
+  "version": "1.0.0",
+  "description": "Atividade Teste de UI",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimeleone/s206-testeui-cypress.git"
+  },
+  "author": "Dimitri Leone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimeleone/s206-testeui-cypress/issues"
+  },
+  "homepage": "https://github.com/dimeleone/s206-testeui-cypress#readme"
+}
