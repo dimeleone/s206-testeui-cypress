@@ -4,7 +4,10 @@
   "description": "Atividade Teste de UI",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^8.6.0"
+    "cypress": "^8.6.0",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   },
   "devDependencies": {},
   "scripts": {

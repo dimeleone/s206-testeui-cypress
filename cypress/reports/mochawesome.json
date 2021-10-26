@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-26T03:40:37.125Z",
+    "end": "2021-10-26T03:41:10.284Z",
+    "duration": 33159,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5fdd0291-9ba1-4926-9c98-80083d6ede19",
+      "title": "",
+      "fullFile": "cypress/integration/testeui/teste.spec.js",
+      "file": "cypress/integration/testeui/teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "56f81108-8ddd-4b89-afa2-0283d16394a2",
+          "title": "Dev Dota2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "cadastro de usuário com erro",
+              "fullTitle": "Dev Dota2 cadastro de usuário com erro",
+              "timedOut": null,
+              "duration": 5907,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let hours = new Date().getHours().toString();\nlet minutes = new Date().getMinutes().toString();\nlet sec = new Date().getSeconds().toString();\nlet userId = hours + minutes + sec + '_userId';\nlet userPass = hours + minutes + sec + '_userPass';\nlet userInfo = [userId, userPass];\ncy.visit('https://dev.dota2.com/register');\ncy.get('#regDataUsername').type(userId);\ncy.get('#regDataPassword').type(userPass);\ncy.get('#regDataConfirmpassword').type(userPass);\ncy.get('#regDataEmail').type(userId + \"@gmail.com\");\ncy.get('#regDataEmailConfirm').type(userId + \"@gmail.com\");\ncy.get('#regDataEmailConfirm').clear();\ncy.get('#cbApproveTerms').click();\ncy.get('#regBtnSubmit').click();\ncy.get('#ui-id-2').should(\"have.text\", \"Error\");",
+              "err": {},
+              "uuid": "b0e0239b-2a36-4f50-9886-bdbcbc969c6f",
+              "parentUUID": "56f81108-8ddd-4b89-afa2-0283d16394a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "cadastro de usuário",
+              "fullTitle": "Dev Dota2 cadastro de usuário",
+              "timedOut": null,
+              "duration": 18497,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "createUser();",
+              "err": {},
+              "uuid": "c2ef172d-daeb-43c2-b8e4-a09e4da58de1",
+              "parentUUID": "56f81108-8ddd-4b89-afa2-0283d16394a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "visitar",
+              "fullTitle": "Dev Dota2 visitar",
+              "timedOut": null,
+              "duration": 3317,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#forum31 > .cell-forum > .forum-wrapper > .forum-info > :nth-child(2)').click();\ncy.get('#widget_12 > .widget-header > .module-title > .main-title').should(\"have.text\", \"Gameplay Bugs\");",
+              "err": {},
+              "uuid": "16cb2753-26d8-4485-b715-f347a271d339",
+              "parentUUID": "56f81108-8ddd-4b89-afa2-0283d16394a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "voltar a home",
+              "fullTitle": "Dev Dota2 voltar a home",
+              "timedOut": null,
+              "duration": 2167,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://dev.dota2.com/\");\ncy.get('#widget_2 > .widget-header > .module-title > .main-title').should(\"contain.text\", \"Forums\");",
+              "err": {},
+              "uuid": "17ab171e-5e86-4f71-a3ea-505d6a55ac5a",
+              "parentUUID": "56f81108-8ddd-4b89-afa2-0283d16394a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b0e0239b-2a36-4f50-9886-bdbcbc969c6f",
+            "c2ef172d-daeb-43c2-b8e4-a09e4da58de1",
+            "16cb2753-26d8-4485-b715-f347a271d339",
+            "17ab171e-5e86-4f71-a3ea-505d6a55ac5a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29888,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
