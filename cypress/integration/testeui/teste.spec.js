@@ -31,7 +31,7 @@ describe ("Dev Dota2", () => {
     })
 
     it
-    ("visitar", () => {
+    ("visitar GamePlay Bugs", () => {
         
         cy.get('#forum31 > .cell-forum > .forum-wrapper > .forum-info > :nth-child(2)').click()
         cy.get('#widget_12 > .widget-header > .module-title > .main-title').should("have.text", "Gameplay Bugs")
@@ -44,6 +44,27 @@ describe ("Dev Dota2", () => {
         cy.visit("https://dev.dota2.com/")
         cy.get('#widget_2 > .widget-header > .module-title > .main-title').should("contain.text", "Forums")
     })
+
+
+    it
+    ("visitar Comunnity Dota 2", () => {
+        
+        cy.get('#forum83 > .cell-forum > .forum-wrapper > .forum-info > .forum-title').click()
+        cy.get('#widget_12 > .widget-header > .module-title > .main-title').should("contain.text", "Ability Draft Bugs")
+        
+    })
+
+    
+    it
+    ("acessar o menu de contato", () => {
+        
+        cy.get('.nav-list > :nth-child(2) > a').click()
+        cy.get('#widget_33 > .widget-header > .module-title > .main-title').should("contain.text", "Contact Us")
+        
+    })
+
+    
+
 });
 
 function createUser() {
